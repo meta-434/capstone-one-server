@@ -2,17 +2,42 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d66c6df-3a9e-4e04-bae8-d7ccdedc63f6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/migrations/002.do.create_pomodoro_sessions.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/002.undo.create_pomodoro_sessions.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/003.do.create_notes.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/003.undo.create_notes.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgrator-config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seeds/seed.notes.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seeds/seed.pomodoro_sessions.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seeds/seed.users.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/notes/notes-router.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/notes/notes-service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/server.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1aghpx7qOQozdnQUmi9yWVeCe5e" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -27,6 +52,34 @@
     <property name="nodejs_package_manager_path" value="/usr/local/Cellar/yarn/1.19.2/libexec" />
     <property name="settings.editor.selected.configurable" value="settings.nodejs" />
   </component>
+  <component name="RunManager" selected="npm.dev">
+    <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="migrate" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="migrate" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.dev" />
+        <item itemvalue="npm.migrate" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -39,10 +92,34 @@
       <updated>1589181294761</updated>
       <workItem from="1589181296471" duration="28000" />
       <workItem from="1589181556623" duration="104000" />
+      <workItem from="1589528416541" duration="11000" />
+      <workItem from="1589528454336" duration="2781000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1678" height="378" key="GridCell.Tab.0.bottom" timestamp="1589531946032">
+      <screen x="0" y="23" width="3440" height="1360" />
+    </state>
+    <state width="1678" height="378" key="GridCell.Tab.0.bottom/615.-1057.1920.1057/0.23.3440.1360@0.23.3440.1360" timestamp="1589531946032" />
+    <state width="1678" height="378" key="GridCell.Tab.0.center" timestamp="1589531946031">
+      <screen x="0" y="23" width="3440" height="1360" />
+    </state>
+    <state width="1678" height="378" key="GridCell.Tab.0.center/615.-1057.1920.1057/0.23.3440.1360@0.23.3440.1360" timestamp="1589531946031" />
+    <state width="1678" height="378" key="GridCell.Tab.0.left" timestamp="1589531946030">
+      <screen x="0" y="23" width="3440" height="1360" />
+    </state>
+    <state width="1678" height="378" key="GridCell.Tab.0.left/615.-1057.1920.1057/0.23.3440.1360@0.23.3440.1360" timestamp="1589531946030" />
+    <state width="1678" height="378" key="GridCell.Tab.0.right" timestamp="1589531946032">
+      <screen x="0" y="23" width="3440" height="1360" />
+    </state>
+    <state width="1678" height="378" key="GridCell.Tab.0.right/615.-1057.1920.1057/0.23.3440.1360@0.23.3440.1360" timestamp="1589531946032" />
+    <state x="100" y="123" width="2133" height="1160" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1589527696943">
+      <screen x="0" y="23" width="3440" height="1360" />
+    </state>
+    <state x="100" y="123" width="2133" height="1160" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/615.-1057.1920.1057/0.23.3440.1360@0.23.3440.1360" timestamp="1589527696943" />
   </component>
 </project>

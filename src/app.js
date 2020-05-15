@@ -4,30 +4,29 @@ const morgan = require('morgan');
 const cors = require('cors');
 const helmet = require('helmet');
 const { NODE_ENV } = require('./config');
+//const sessionsRouter = require('./sessions/sessions-router');
+const notesRouter = require('./notes/notes-router');
+
 const app = express();
 
-const morganOption = (NODE_ENV === 'production')
-    ? 'tiny'
-    : 'common';
-
-app.use(morgan(morganOption));
-app.use(helmet());
+app.use(morgan((NODE_ENV === 'production') ? 'tiny' : 'common', {
+    skip: () => NODE_ENV === 'test'
+}));
 app.use(cors());
+app.use(helmet());
 
-app.get('/', (req, res) => {
-    res
-        .send('Hello, world!')
-});
+//app.use('/api/sessions', sessionsRouter);
+app.use('/api/notes', notesRouter);
 
 app.use(function errorHandler(error, req, res, next) {
     let response;
     if (NODE_ENV === 'production') {
-        response = { error: { message: 'server error'}}
+        response = { error: 'Server error' }
     } else {
         console.error(error);
-        response = { error: { message: error.message, error}}
+        response = { message: error.message, error }
     }
-    res.status(500).json(response);
+    res.status(500).json(response).catch(next);
 });
 
 module.exports = app;
