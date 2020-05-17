@@ -4,9 +4,18 @@ const AuthService = {
             .select('*')
             .from('users');
     },
+    getUserByUsername(knex, username) {
+      return knex
+          .select('*')
+          .from('users')
+          .where({username});
+    },
     insertUser(knex, newUser) {
         return knex
-            .insert(/* TODO: FILL THIS OUT */)
+            .insert({
+                'username':`${newUser.username}`,
+                'password':`${newUser.password}`,
+            })
             .into('users')
             .returning('*')
             .then(rows => {

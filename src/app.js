@@ -60,24 +60,11 @@ ProtectedRoutes.use((req, res, next) =>{
     }
 });
 
-// const serializeUser = user => ({
-//     id: user.id,
-//     username: xss(user.username),
-//     password: xss(user.password),
-//     admin: user.admin,
-//     created_at: user.created_at
-// });
-
 // on successful authentication, return jwt to client for future access
 app.post('/authenticate',(req,res,next)=>{
     const knexInstance = req.app.get('db');
     AuthService.getAllUsers(knexInstance)
         .then(users => {
-            // this exposes all users, only used for dev purposes
-            // give appropriate response
-            // res
-            //     .json(users.map(serializeUser))
-            //     .status(201);
             return users;
         })
         .then(result => {
@@ -92,7 +79,11 @@ app.post('/authenticate',(req,res,next)=>{
             if (foundUsers.length > 0) {
                 //if everything is ok, proceed to create token
                 const payload = {
-                    check:  true
+                    check:  true,
+                    username: foundUsers[0].username,
+                    password: foundUsers[0].password,
+                    id: foundUsers[0].id,
+                    is_admin: foundUsers[0].admin,
                 };
 
                 let token = jwt.sign(payload, app.get('Secret'), {

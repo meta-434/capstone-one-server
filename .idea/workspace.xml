@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d66c6df-3a9e-4e04-bae8-d7ccdedc63f6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/auth-service.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/auth/auth-router.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/auth-service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/auth-service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/notes/notes-router.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/notes/notes-router.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/notes/notes-service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/notes/notes-service.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +83,7 @@
       <workItem from="1589181556623" duration="104000" />
       <workItem from="1589528416541" duration="11000" />
       <workItem from="1589528454336" duration="4379000" />
-      <workItem from="1589707810265" duration="5957000" />
+      <workItem from="1589707810265" duration="10442000" />
     </task>
     <servers />
   </component>
@@ -90,25 +91,29 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1678" height="378" key="GridCell.Tab.0.bottom" timestamp="1589725466844">
+    <state width="1678" height="378" key="GridCell.Tab.0.bottom" timestamp="1589750742646">
       <screen x="0" y="23" width="3440" height="1360" />
     </state>
-    <state width="1678" height="378" key="GridCell.Tab.0.bottom/615.-1057.1920.1057/0.23.3440.1360@0.23.3440.1360" timestamp="1589725466844" />
-    <state width="1678" height="378" key="GridCell.Tab.0.center" timestamp="1589725466842">
+    <state width="1678" height="378" key="GridCell.Tab.0.bottom/615.-1057.1920.1057/0.23.3440.1360@0.23.3440.1360" timestamp="1589750742646" />
+    <state width="1678" height="378" key="GridCell.Tab.0.center" timestamp="1589750742645">
       <screen x="0" y="23" width="3440" height="1360" />
     </state>
-    <state width="1678" height="378" key="GridCell.Tab.0.center/615.-1057.1920.1057/0.23.3440.1360@0.23.3440.1360" timestamp="1589725466842" />
-    <state width="1678" height="378" key="GridCell.Tab.0.left" timestamp="1589725466842">
+    <state width="1678" height="378" key="GridCell.Tab.0.center/615.-1057.1920.1057/0.23.3440.1360@0.23.3440.1360" timestamp="1589750742645" />
+    <state width="1678" height="378" key="GridCell.Tab.0.left" timestamp="1589750742644">
       <screen x="0" y="23" width="3440" height="1360" />
     </state>
-    <state width="1678" height="378" key="GridCell.Tab.0.left/615.-1057.1920.1057/0.23.3440.1360@0.23.3440.1360" timestamp="1589725466842" />
-    <state width="1678" height="378" key="GridCell.Tab.0.right" timestamp="1589725466843">
+    <state width="1678" height="378" key="GridCell.Tab.0.left/615.-1057.1920.1057/0.23.3440.1360@0.23.3440.1360" timestamp="1589750742644" />
+    <state width="1678" height="378" key="GridCell.Tab.0.right" timestamp="1589750742645">
       <screen x="0" y="23" width="3440" height="1360" />
     </state>
-    <state width="1678" height="378" key="GridCell.Tab.0.right/615.-1057.1920.1057/0.23.3440.1360@0.23.3440.1360" timestamp="1589725466843" />
+    <state width="1678" height="378" key="GridCell.Tab.0.right/615.-1057.1920.1057/0.23.3440.1360@0.23.3440.1360" timestamp="1589750742645" />
     <state x="100" y="123" width="2133" height="1160" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1589527696943">
       <screen x="0" y="23" width="3440" height="1360" />
     </state>
     <state x="100" y="123" width="2133" height="1160" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/615.-1057.1920.1057/0.23.3440.1360@0.23.3440.1360" timestamp="1589527696943" />
+    <state x="566" y="460" width="588" height="486" key="find.popup" timestamp="1589749028536">
+      <screen x="0" y="23" width="3440" height="1360" />
+    </state>
+    <state x="566" y="460" width="588" height="486" key="find.popup/615.-1057.1920.1057/0.23.3440.1360@0.23.3440.1360" timestamp="1589749028536" />
   </component>
 </project>
