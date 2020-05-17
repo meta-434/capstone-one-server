@@ -3,12 +3,14 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const jwt = require('jsonwebtoken');
 const config = require('./config');
+const xss = require('xss');
 const morgan = require('morgan');
 const cors = require('cors');
 const helmet = require('helmet');
 const { NODE_ENV } = require('./config');
 const sessionsRouter = require('./sessions/sessions-router');
 const notesRouter = require('./notes/notes-router');
+const AuthService = require('./auth-service');
 
 const app = express();
 
@@ -58,31 +60,55 @@ ProtectedRoutes.use((req, res, next) =>{
     }
 });
 
-app.post('/authenticate',(req,res)=>{
-    if(req.body.username==="testuser"){
-        if(req.body.password==="123"){
-            //if eveything is okey let's create our token
-            const payload = {
-                check:  true
-            };
+// const serializeUser = user => ({
+//     id: user.id,
+//     username: xss(user.username),
+//     password: xss(user.password),
+//     admin: user.admin,
+//     created_at: user.created_at
+// });
 
-            let token = jwt.sign(payload, app.get('Secret'), {
-                expiresIn: 1440 // expires in 24 hours
+// on successful authentication, return jwt to client for future access
+app.post('/authenticate',(req,res,next)=>{
+    const knexInstance = req.app.get('db');
+    AuthService.getAllUsers(knexInstance)
+        .then(users => {
+            // this exposes all users, only used for dev purposes
+            // give appropriate response
+            // res
+            //     .json(users.map(serializeUser))
+            //     .status(201);
+            return users;
+        })
+        .then(result => {
+            const foundUsers = result.filter((el) => {
+                return (
+                  el.username === req.body.username &&
+                      el.password === req.body.password
+                );
             });
 
-            // return the informations to the client
-            res.json({
-                message: 'authentication done ',
-                token: token
-            });
+            console.log(foundUsers[0]);
+            if (foundUsers.length > 0) {
+                //if everything is ok, proceed to create token
+                const payload = {
+                    check:  true
+                };
 
-        }else{
-            res.json({message:"please check your password !"})
-        }
+                let token = jwt.sign(payload, app.get('Secret'), {
+                    expiresIn: 1440 // expires in 24 hours
+                });
 
-    }else{
-        res.json({message:"user not found !"})
-    }
+                // return the information to the client
+                res.json({
+                    message: 'authentication complete.',
+                    token: token
+                });
+            } else {
+                res.json({message: "username or password incorrect"})
+            }
+        })
+        .catch(next);
 })
 
 // point to other endpoint routers
@@ -93,7 +119,6 @@ ProtectedRoutes.use('/sessions', sessionsRouter);
 app.get('/', function(req, res) {
     res.send(`Hello world! app is running on ${config.PORT}`);
 });
-
 
 // error handling
 app.use(function errorHandler(error, req, res, next) {
