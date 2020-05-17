@@ -12,13 +12,17 @@ const notesRouter = require('./notes/notes-router');
 
 const app = express();
 
-// set secret
+//set secret
 app.set('Secret', config.SECRET_KEY);
 
-// log requests
-app.use(morgan((NODE_ENV === 'production') ? 'tiny' : 'common', {
-    skip: () => NODE_ENV === 'test'
-}));
+// helmet
+app.use(helmet());
+
+// cors
+app.use(cors({credentials: true, origin: 'http://localhost:4200'}));
+
+// use morgan to log requests to the console
+app.use(morgan('dev'));
 
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -26,41 +30,70 @@ app.use(bodyParser.urlencoded({ extended: true }));
 // parse application/json
 app.use(bodyParser.json());
 
-// cors and header obfuscation
-app.use(cors());
-app.use(helmet());
+// define router
+const  ProtectedRoutes = express.Router();
 
-// routers
-app.use('/api/sessions', sessionsRouter);
-app.use('/api/notes', notesRouter);
+app.use('/api', ProtectedRoutes);
+ProtectedRoutes.use((req, res, next) =>{
+    // check header or url parameters or post parameters for token
+    let token = req.headers['access-token'];
 
-app.post('/api/authenticate', (req, res) => {
-    if (req.body.username ==='testuser') {
-        if (req.body.password === 123) {
-            // everything ok, create token
-            const payload = {check: true};
+    // decode token
+    if (token) {
+        // verifies secret and checks exp
+        jwt.verify(token, app.get('Secret'), (err, decoded) =>{
+            if (err) {
+                return res.json({ success: false, message: 'Failed to authenticate token.' });
+            } else {
+                // if everything is good, save to request for use in other routes
+                req.decoded = decoded;
+                next();
+            }
+        });
+    } else {
+        // if there is no token, return an error
+        return res.status(403).send({
+            message: 'No token provided.'
+        });
+    }
+});
+
+app.post('/authenticate',(req,res)=>{
+    if(req.body.username==="testuser"){
+        if(req.body.password==="123"){
+            //if eveything is okey let's create our token
+            const payload = {
+                check:  true
+            };
 
             let token = jwt.sign(payload, app.get('Secret'), {
-                expiresIn: 1440 //expires in 24 hours
+                expiresIn: 1440 // expires in 24 hours
             });
 
+            // return the informations to the client
             res.json({
-                message: 'authentication done',
+                message: 'authentication done ',
                 token: token
             });
-        } else {
-            res.json({message:"please check your password !"});
+
+        }else{
+            res.json({message:"please check your password !"})
         }
-    } else {
-        res.json({message:"user not found !"});
+
+    }else{
+        res.json({message:"user not found !"})
     }
 })
 
+// point to other endpoint routers
+ProtectedRoutes.use('/notes', notesRouter);
+ProtectedRoutes.use('/sessions', sessionsRouter);
 
 // '/' catcher
 app.get('/', function(req, res) {
-    res.send(`Hello world, I'm running on http://localhost:${process.env.PORT}`)
-})
+    res.send(`Hello world! app is running on ${config.PORT}`);
+});
+
 
 // error handling
 app.use(function errorHandler(error, req, res, next) {
