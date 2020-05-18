@@ -21,7 +21,7 @@ app.set('Secret', config.SECRET_KEY);
 app.use(helmet());
 
 // cors
-app.use(cors({credentials: true, origin: 'http://localhost:4200'}));
+app.use(cors({credentials: true}));
 
 // use morgan to log requests to the console
 app.use(morgan('dev'));
@@ -74,8 +74,7 @@ app.post('/authenticate',(req,res,next)=>{
                       el.password === req.body.password
                 );
             });
-
-            console.log(foundUsers[0]);
+            // if there are any users that match...
             if (foundUsers.length > 0) {
                 //if everything is ok, proceed to create token
                 const payload = {
@@ -91,12 +90,16 @@ app.post('/authenticate',(req,res,next)=>{
                 });
 
                 // return the information to the client
-                res.json({
+                res
+                    .json({
                     message: 'authentication complete.',
                     token: token
-                });
+                    })
+                    .status(202)
             } else {
-                res.json({message: "username or password incorrect"})
+                res
+                    .json({message: "username or password incorrect"})
+                    .status(403);
             }
         })
         .catch(next);

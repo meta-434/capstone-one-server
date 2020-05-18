@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../capstone-one-client/.idea/capstone-one-client.iml" filepath="$PROJECT_DIR$/../capstone-one-client/.idea/capstone-one-client.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/express-boilerplate.iml" filepath="$PROJECT_DIR$/.idea/express-boilerplate.iml" />
     </modules>
   </component>

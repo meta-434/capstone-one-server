@@ -11,7 +11,8 @@ const serializeSession = session => (
         id: session.id,
         session_name: xss(session.session_name),
         session_description: xss(session.session_description),
-        session_owner: session.session_owner
+        session_owner: session.session_owner,
+        session_end: session.session_end
     }
 );
 
