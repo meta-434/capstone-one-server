@@ -18,16 +18,18 @@ const serializeSession = session => (
 sessionsRouter
     .route('/')
     .get(function(req, res, next) {
+        const ownerId = parseInt(req.decoded.id, 10);
         const knexInstance = req.app.get('db');
-        SessionsService.getAllSessions(knexInstance)
+        SessionsService.getSessionsByOwnerId(knexInstance, ownerId)
             .then(sessions => {
                 res.json(sessions.map(serializeSession))
             })
             .catch(next);
     })
     .post(jsonParser, function(req, res, next) {
-        const { session_name, session_description, session_owner } = req.body;
-        const newSession = { session_name, session_description, session_owner};
+        const ownerId = parseInt(req.decoded.id, 10);
+        const { session_name, session_description } = req.body;
+        const newSession = { session_name, session_description, ownerId};
 
         for (const [key, value] of Object.entries(newSession)) {
             if (value == null) {
@@ -58,7 +60,8 @@ sessionsRouter
     .all(function(req, res, next) {
         SessionsService.getById(
             req.app.get('db'),
-            req.params.session_id
+            req.params.session_id,
+            req.decoded.id
         )
             .then(session => {
                 if (!session) {

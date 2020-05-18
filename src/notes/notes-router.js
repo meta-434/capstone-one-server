@@ -1,8 +1,6 @@
 const express = require('express');
 const xss = require('xss');
 const NotesService = require('./notes-service');
-const jwt = require('jsonwebtoken');
-const config = require('../config');
 
 const notesRouter = express.Router();
 const jsonParser = express.json();
@@ -19,7 +17,7 @@ const serializeNote = note => (
 notesRouter
     .route('/')
     .get(function(req, res, next) {
-        const ownerId = req.decoded.id;
+        const ownerId = parseInt(req.decoded.id, 10);
         const knexInstance = req.app.get('db');
         NotesService.getNotesByOwnerId(knexInstance, ownerId)
             .then(notes => {
