@@ -2,17 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d66c6df-3a9e-4e04-bae8-d7ccdedc63f6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../capstone-one-client/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/../capstone-one-client/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../capstone-one-client/src/Components/Nav.css" beforeDir="false" afterPath="$PROJECT_DIR$/../capstone-one-client/src/Components/Nav.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../capstone-one-client/src/Components/Nav.js" beforeDir="false" afterPath="$PROJECT_DIR$/../capstone-one-client/src/Components/Nav.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../capstone-one-client/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/../capstone-one-client/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/express-boilerplate.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/express-boilerplate.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/notes/notes-router.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/notes/notes-router.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sessions/sessions-router.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/sessions/sessions-router.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,7 +19,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../capstone-one-client" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1aghpx7qOQozdnQUmi9yWVeCe5e" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -68,6 +60,16 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="prebuild" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/../capstone-one-client/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="prebuild" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/../capstone-one-client/package.json" />
       <command value="run" />
@@ -80,8 +82,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.start" />
         <item itemvalue="npm.dev" />
+        <item itemvalue="npm.prebuild" />
+        <item itemvalue="npm.start" />
         <item itemvalue="npm.migrate" />
       </list>
     </recent_temporary>
@@ -100,7 +103,7 @@
       <workItem from="1589181556623" duration="104000" />
       <workItem from="1589528416541" duration="11000" />
       <workItem from="1589528454336" duration="4379000" />
-      <workItem from="1589707810265" duration="29736000" />
+      <workItem from="1589707810265" duration="33707000" />
     </task>
     <servers />
   </component>
@@ -108,29 +111,29 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="2325" height="343" key="GridCell.Tab.0.bottom" timestamp="1589796388165">
+    <state width="2325" height="478" key="GridCell.Tab.0.bottom" timestamp="1589838875408">
       <screen x="0" y="23" width="3440" height="1360" />
     </state>
-    <state width="2325" height="343" key="GridCell.Tab.0.bottom/615.-1057.1920.1057/0.23.3440.1360@0.23.3440.1360" timestamp="1589796388165" />
-    <state width="2325" height="343" key="GridCell.Tab.0.center" timestamp="1589796388164">
+    <state width="2325" height="478" key="GridCell.Tab.0.bottom/615.-1057.1920.1057/0.23.3440.1360@0.23.3440.1360" timestamp="1589838875408" />
+    <state width="2325" height="478" key="GridCell.Tab.0.center" timestamp="1589838875407">
       <screen x="0" y="23" width="3440" height="1360" />
     </state>
-    <state width="2325" height="343" key="GridCell.Tab.0.center/615.-1057.1920.1057/0.23.3440.1360@0.23.3440.1360" timestamp="1589796388164" />
-    <state width="2325" height="343" key="GridCell.Tab.0.left" timestamp="1589796388164">
+    <state width="2325" height="478" key="GridCell.Tab.0.center/615.-1057.1920.1057/0.23.3440.1360@0.23.3440.1360" timestamp="1589838875407" />
+    <state width="2325" height="478" key="GridCell.Tab.0.left" timestamp="1589838875406">
       <screen x="0" y="23" width="3440" height="1360" />
     </state>
-    <state width="2325" height="343" key="GridCell.Tab.0.left/615.-1057.1920.1057/0.23.3440.1360@0.23.3440.1360" timestamp="1589796388164" />
-    <state width="2325" height="343" key="GridCell.Tab.0.right" timestamp="1589796388165">
+    <state width="2325" height="478" key="GridCell.Tab.0.left/615.-1057.1920.1057/0.23.3440.1360@0.23.3440.1360" timestamp="1589838875406" />
+    <state width="2325" height="478" key="GridCell.Tab.0.right" timestamp="1589838875407">
       <screen x="0" y="23" width="3440" height="1360" />
     </state>
-    <state width="2325" height="343" key="GridCell.Tab.0.right/615.-1057.1920.1057/0.23.3440.1360@0.23.3440.1360" timestamp="1589796388165" />
+    <state width="2325" height="478" key="GridCell.Tab.0.right/615.-1057.1920.1057/0.23.3440.1360@0.23.3440.1360" timestamp="1589838875407" />
     <state x="100" y="123" width="2133" height="1160" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1589527696943">
       <screen x="0" y="23" width="3440" height="1360" />
     </state>
     <state x="100" y="123" width="2133" height="1160" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/615.-1057.1920.1057/0.23.3440.1360@0.23.3440.1360" timestamp="1589527696943" />
-    <state x="566" y="460" width="588" height="486" key="find.popup" timestamp="1589797861296">
+    <state x="566" y="460" width="588" height="486" key="find.popup" timestamp="1589817770355">
       <screen x="0" y="23" width="3440" height="1360" />
     </state>
-    <state x="566" y="460" width="588" height="486" key="find.popup/615.-1057.1920.1057/0.23.3440.1360@0.23.3440.1360" timestamp="1589797861296" />
+    <state x="566" y="460" width="588" height="486" key="find.popup/615.-1057.1920.1057/0.23.3440.1360@0.23.3440.1360" timestamp="1589817770355" />
   </component>
 </project>

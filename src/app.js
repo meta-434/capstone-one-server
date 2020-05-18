@@ -105,6 +105,35 @@ app.post('/authenticate',(req,res,next)=>{
         .catch(next);
 })
 
+// handle new user submissions
+app.patch('/authenticate', (req, res, next) => {
+    const {username, password} = req.body;
+    const knexInstance = req.app.get('db');
+
+    AuthService
+        .getAllUsers(knexInstance)
+        .then(res => {
+            return resFiltered = res.filter((usr) => (username === usr.username))
+        })
+        .then(filterRes => {
+            if (filterRes.length > 0) {
+                res.json({
+                    message: 'user already exists'
+                })
+                    .status(401);
+            } else {
+                AuthService.insertUser(knexInstance, {username, password})
+                    .then(result => {
+                        res.json({
+                            message: 'signup complete'
+                        })
+                            .status(202);
+                    })
+                    .catch(error => console.error(error))
+            }
+        });
+})
+
 // point to other endpoint routers
 ProtectedRoutes.use('/notes', notesRouter);
 ProtectedRoutes.use('/sessions', sessionsRouter);
