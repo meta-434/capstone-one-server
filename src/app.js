@@ -21,17 +21,7 @@ app.set('Secret', config.SECRET_KEY);
 app.use(helmet());
 
 // cors
-app.use(function(req, res, next) {
-    res.header('Access-Control-Allow-Origin', '*');
-    res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE,PATCH,OPTIONS');
-    res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization, Content-Length, X-Requested-With');
-    // allow preflight
-    if (req.method === 'OPTIONS') {
-        res.sendStatus(200);
-    } else {
-        next();
-    }
-});
+app.use(cors());
 
 // use morgan to log requests to the console
 app.use(morgan('dev'));
@@ -101,22 +91,24 @@ app.post('/authenticate',(req,res,next)=>{
 
                 // return the information to the client
                 res
-                    .json({
-                    message: 'authentication complete.',
-                    token: token
-                    })
                     .status(202)
+                    .json({
+                        message: 'authentication complete.',
+                        token: token
+                    })
+
             } else {
                 res
-                    .json({message: "username or password incorrect"})
-                    .status(403);
+                    .status(403)
+                    .send({error: "username or password incorrect"})
+
             }
         })
         .catch(next);
 })
 
 // handle new user submissions
-app.patch('/authenticate', (req, res, next) => {
+app.post('/signup', (req, res, next) => {
 
     const {username, password} = req.body;
     const knexInstance = req.app.get('db');
@@ -128,18 +120,22 @@ app.patch('/authenticate', (req, res, next) => {
         })
         .then(filterRes => {
             if (filterRes.length > 0) {
-                res.json({
-                    message: 'user already exists'
-                })
-                    .status(401);
+                res
+                    .status(409)
+                    .send({
+                        error: 'user already exists'
+                    });
+
             } else {
                 AuthService.insertUser(knexInstance, {username, password})
                     .then(result => {
-                        res.json({
-                            message: 'signup complete'
-                        })
-                            .status(202);
-                    })
+                        res
+                            .status(202)
+                            .json({
+                                    message: 'signup complete'
+                                })
+
+                            })
                     .catch(error => console.error(error))
             }
         });
