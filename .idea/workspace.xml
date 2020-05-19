@@ -2,9 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d66c6df-3a9e-4e04-bae8-d7ccdedc63f6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../capstone-one-client/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/../capstone-one-client/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../capstone-one-client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../capstone-one-client/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../capstone-one-client/src/Components/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/../capstone-one-client/src/Components/Login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../capstone-one-client/src/Components/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../capstone-one-client/src/Components/Main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../capstone-one-client/src/Components/Nav.css" beforeDir="false" afterPath="$PROJECT_DIR$/../capstone-one-client/src/Components/Nav.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../capstone-one-client/src/Components/Notes.js" beforeDir="false" afterPath="$PROJECT_DIR$/../capstone-one-client/src/Components/Notes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../capstone-one-client/src/Components/Sessions.js" beforeDir="false" afterPath="$PROJECT_DIR$/../capstone-one-client/src/Components/Sessions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../capstone-one-client/src/Components/TimerComponent.css" beforeDir="false" afterPath="$PROJECT_DIR$/../capstone-one-client/src/Components/TimerComponent.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../capstone-one-client/src/Components/TimerComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/../capstone-one-client/src/Components/TimerComponent.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,21 +48,31 @@
     <property name="settings.editor.selected.configurable" value="settings.nodejs" />
   </component>
   <component name="RunManager" selected="npm.dev">
-    <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
+    <configuration name="deploy (1)" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/../capstone-one-client/package.json" />
       <command value="run" />
       <scripts>
-        <script value="dev" />
+        <script value="deploy" />
       </scripts>
       <node-interpreter value="project" />
       <envs />
       <method v="2" />
     </configuration>
-    <configuration name="migrate" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+    <configuration name="deploy" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
       <scripts>
-        <script value="migrate" />
+        <script value="deploy" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
       </scripts>
       <node-interpreter value="project" />
       <envs />
@@ -82,10 +100,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.deploy (1)" />
         <item itemvalue="npm.dev" />
-        <item itemvalue="npm.prebuild" />
         <item itemvalue="npm.start" />
-        <item itemvalue="npm.migrate" />
+        <item itemvalue="npm.deploy" />
+        <item itemvalue="npm.prebuild" />
       </list>
     </recent_temporary>
   </component>
@@ -103,7 +122,7 @@
       <workItem from="1589181556623" duration="104000" />
       <workItem from="1589528416541" duration="11000" />
       <workItem from="1589528454336" duration="4379000" />
-      <workItem from="1589707810265" duration="33707000" />
+      <workItem from="1589707810265" duration="43933000" />
     </task>
     <servers />
   </component>
@@ -111,29 +130,33 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="2325" height="478" key="GridCell.Tab.0.bottom" timestamp="1589838875408">
+    <state width="1678" height="478" key="GridCell.Tab.0.bottom" timestamp="1589856419972">
       <screen x="0" y="23" width="3440" height="1360" />
     </state>
-    <state width="2325" height="478" key="GridCell.Tab.0.bottom/615.-1057.1920.1057/0.23.3440.1360@0.23.3440.1360" timestamp="1589838875408" />
-    <state width="2325" height="478" key="GridCell.Tab.0.center" timestamp="1589838875407">
+    <state width="1678" height="478" key="GridCell.Tab.0.bottom/615.-1057.1920.1057/0.23.3440.1360@0.23.3440.1360" timestamp="1589856419972" />
+    <state width="1678" height="478" key="GridCell.Tab.0.center" timestamp="1589856419971">
       <screen x="0" y="23" width="3440" height="1360" />
     </state>
-    <state width="2325" height="478" key="GridCell.Tab.0.center/615.-1057.1920.1057/0.23.3440.1360@0.23.3440.1360" timestamp="1589838875407" />
-    <state width="2325" height="478" key="GridCell.Tab.0.left" timestamp="1589838875406">
+    <state width="1678" height="478" key="GridCell.Tab.0.center/615.-1057.1920.1057/0.23.3440.1360@0.23.3440.1360" timestamp="1589856419971" />
+    <state width="1678" height="478" key="GridCell.Tab.0.left" timestamp="1589856419971">
       <screen x="0" y="23" width="3440" height="1360" />
     </state>
-    <state width="2325" height="478" key="GridCell.Tab.0.left/615.-1057.1920.1057/0.23.3440.1360@0.23.3440.1360" timestamp="1589838875406" />
-    <state width="2325" height="478" key="GridCell.Tab.0.right" timestamp="1589838875407">
+    <state width="1678" height="478" key="GridCell.Tab.0.left/615.-1057.1920.1057/0.23.3440.1360@0.23.3440.1360" timestamp="1589856419971" />
+    <state width="1678" height="478" key="GridCell.Tab.0.right" timestamp="1589856419971">
       <screen x="0" y="23" width="3440" height="1360" />
     </state>
-    <state width="2325" height="478" key="GridCell.Tab.0.right/615.-1057.1920.1057/0.23.3440.1360@0.23.3440.1360" timestamp="1589838875407" />
+    <state width="1678" height="478" key="GridCell.Tab.0.right/615.-1057.1920.1057/0.23.3440.1360@0.23.3440.1360" timestamp="1589856419971" />
     <state x="100" y="123" width="2133" height="1160" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1589527696943">
       <screen x="0" y="23" width="3440" height="1360" />
     </state>
     <state x="100" y="123" width="2133" height="1160" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/615.-1057.1920.1057/0.23.3440.1360@0.23.3440.1360" timestamp="1589527696943" />
-    <state x="566" y="460" width="588" height="486" key="find.popup" timestamp="1589817770355">
+    <state x="566" y="460" width="588" height="486" key="find.popup" timestamp="1589852816063">
       <screen x="0" y="23" width="3440" height="1360" />
     </state>
-    <state x="566" y="460" width="588" height="486" key="find.popup/615.-1057.1920.1057/0.23.3440.1360@0.23.3440.1360" timestamp="1589817770355" />
+    <state x="566" y="460" width="588" height="486" key="find.popup/615.-1057.1920.1057/0.23.3440.1360@0.23.3440.1360" timestamp="1589852816063" />
+    <state x="525" y="334" width="670" height="676" key="search.everywhere.popup" timestamp="1589855098271">
+      <screen x="0" y="23" width="3440" height="1360" />
+    </state>
+    <state x="525" y="334" width="670" height="676" key="search.everywhere.popup/615.-1057.1920.1057/0.23.3440.1360@0.23.3440.1360" timestamp="1589855098271" />
   </component>
 </project>

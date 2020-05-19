@@ -21,7 +21,7 @@ app.set('Secret', config.SECRET_KEY);
 app.use(helmet());
 
 // cors
-app.use(cors({credentials: true}));
+app.use(cors());
 
 // use morgan to log requests to the console
 app.use(morgan('dev'));
@@ -107,6 +107,7 @@ app.post('/authenticate',(req,res,next)=>{
 
 // handle new user submissions
 app.patch('/authenticate', (req, res, next) => {
+
     const {username, password} = req.body;
     const knexInstance = req.app.get('db');
 
