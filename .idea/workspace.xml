@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d66c6df-3a9e-4e04-bae8-d7ccdedc63f6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/test/notes/notes-service.test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/app.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/app.spec.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,13 +15,13 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../capstone-one-client" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1aghpx7qOQozdnQUmi9yWVeCe5e" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -41,16 +43,6 @@
     <property name="settings.editor.selected.configurable" value="settings.nodejs" />
   </component>
   <component name="RunManager" selected="npm.dev">
-    <configuration name="deploy (1)" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/../capstone-one-client/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="deploy" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
     <configuration name="deploy" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -71,11 +63,11 @@
       <envs />
       <method v="2" />
     </configuration>
-    <configuration name="prebuild" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/../capstone-one-client/package.json" />
+    <configuration name="migrate:test" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
       <scripts>
-        <script value="prebuild" />
+        <script value="migrate:test" />
       </scripts>
       <node-interpreter value="project" />
       <envs />
@@ -91,13 +83,23 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="test" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="test" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.test" />
+        <item itemvalue="npm.migrate:test" />
         <item itemvalue="npm.start" />
         <item itemvalue="npm.dev" />
         <item itemvalue="npm.deploy" />
-        <item itemvalue="npm.deploy (1)" />
-        <item itemvalue="npm.prebuild" />
       </list>
     </recent_temporary>
   </component>
@@ -123,34 +125,34 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1678" height="477" key="GridCell.Tab.0.bottom" timestamp="1589915348919">
+    <state width="2190" height="477" key="GridCell.Tab.0.bottom" timestamp="1590181632208">
       <screen x="0" y="23" width="3440" height="1360" />
     </state>
-    <state width="1678" height="477" key="GridCell.Tab.0.bottom/615.-1057.1920.1057/0.23.3440.1360@0.23.3440.1360" timestamp="1589915348919" />
+    <state width="2190" height="477" key="GridCell.Tab.0.bottom/615.-1057.1920.1057/0.23.3440.1360@0.23.3440.1360" timestamp="1590181632208" />
     <state width="918" height="478" key="GridCell.Tab.0.bottom/615.-1057.1920.1057/0.23.3440.1360@615.-1057.1920.1057" timestamp="1589901869310" />
-    <state width="1678" height="477" key="GridCell.Tab.0.center" timestamp="1589915348918">
+    <state width="2190" height="477" key="GridCell.Tab.0.center" timestamp="1590181632207">
       <screen x="0" y="23" width="3440" height="1360" />
     </state>
-    <state width="1678" height="477" key="GridCell.Tab.0.center/615.-1057.1920.1057/0.23.3440.1360@0.23.3440.1360" timestamp="1589915348918" />
+    <state width="2190" height="477" key="GridCell.Tab.0.center/615.-1057.1920.1057/0.23.3440.1360@0.23.3440.1360" timestamp="1590181632207" />
     <state width="918" height="478" key="GridCell.Tab.0.center/615.-1057.1920.1057/0.23.3440.1360@615.-1057.1920.1057" timestamp="1589901869310" />
-    <state width="1678" height="477" key="GridCell.Tab.0.left" timestamp="1589915348917">
+    <state width="2190" height="477" key="GridCell.Tab.0.left" timestamp="1590181632206">
       <screen x="0" y="23" width="3440" height="1360" />
     </state>
-    <state width="1678" height="477" key="GridCell.Tab.0.left/615.-1057.1920.1057/0.23.3440.1360@0.23.3440.1360" timestamp="1589915348917" />
+    <state width="2190" height="477" key="GridCell.Tab.0.left/615.-1057.1920.1057/0.23.3440.1360@0.23.3440.1360" timestamp="1590181632206" />
     <state width="918" height="478" key="GridCell.Tab.0.left/615.-1057.1920.1057/0.23.3440.1360@615.-1057.1920.1057" timestamp="1589901869309" />
-    <state width="1678" height="477" key="GridCell.Tab.0.right" timestamp="1589915348918">
+    <state width="2190" height="477" key="GridCell.Tab.0.right" timestamp="1590181632208">
       <screen x="0" y="23" width="3440" height="1360" />
     </state>
-    <state width="1678" height="477" key="GridCell.Tab.0.right/615.-1057.1920.1057/0.23.3440.1360@0.23.3440.1360" timestamp="1589915348918" />
+    <state width="2190" height="477" key="GridCell.Tab.0.right/615.-1057.1920.1057/0.23.3440.1360@0.23.3440.1360" timestamp="1590181632208" />
     <state width="918" height="478" key="GridCell.Tab.0.right/615.-1057.1920.1057/0.23.3440.1360@615.-1057.1920.1057" timestamp="1589901869310" />
     <state x="100" y="123" width="2133" height="1160" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1589527696943">
       <screen x="0" y="23" width="3440" height="1360" />
     </state>
     <state x="100" y="123" width="2133" height="1160" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/615.-1057.1920.1057/0.23.3440.1360@0.23.3440.1360" timestamp="1589527696943" />
-    <state x="100" y="123" width="1520" height="1160" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1589915289988">
+    <state x="100" y="123" width="1520" height="1160" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1590177744599">
       <screen x="0" y="23" width="3440" height="1360" />
     </state>
-    <state x="100" y="123" width="1520" height="1160" key="com.intellij.history.integration.ui.views.FileHistoryDialog/615.-1057.1920.1057/0.23.3440.1360@0.23.3440.1360" timestamp="1589915289988" />
+    <state x="100" y="123" width="1520" height="1160" key="com.intellij.history.integration.ui.views.FileHistoryDialog/615.-1057.1920.1057/0.23.3440.1360@0.23.3440.1360" timestamp="1590177744599" />
     <state x="100" y="123" width="2385" height="1160" key="com.intellij.history.integration.ui.views.SelectionHistoryDialog" timestamp="1589915289989">
       <screen x="0" y="23" width="3440" height="1360" />
     </state>
