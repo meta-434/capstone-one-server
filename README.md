@@ -24,5 +24,4 @@ Run the tests `yarn run test`
 
 ## Tech
 + Express
-<br />
 + JWT
