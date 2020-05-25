@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d66c6df-3a9e-4e04-bae8-d7ccdedc63f6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/test/sessions/sessions-service.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../capstone-one-client/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../capstone-one-client/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/notes/notes-service.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/notes/notes-service.spec.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/setup.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/setup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,16 +42,6 @@
     <property name="settings.editor.selected.configurable" value="settings.nodejs" />
   </component>
   <component name="RunManager" selected="npm.dev">
-    <configuration name="deploy" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="deploy" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
     <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -83,6 +72,16 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="test (1)" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/../capstone-one-client/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="test" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="test" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -95,11 +94,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.test (1)" />
         <item itemvalue="npm.test" />
         <item itemvalue="npm.migrate:test" />
         <item itemvalue="npm.start" />
         <item itemvalue="npm.dev" />
-        <item itemvalue="npm.deploy" />
       </list>
     </recent_temporary>
   </component>
@@ -125,28 +124,28 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="3398" height="477" key="GridCell.Tab.0.bottom" timestamp="1590188914419">
-      <screen x="0" y="0" width="3440" height="1440" />
+    <state width="1678" height="716" key="GridCell.Tab.0.bottom" timestamp="1590396668336">
+      <screen x="0" y="23" width="3440" height="1360" />
     </state>
-    <state width="1678" height="477" key="GridCell.Tab.0.bottom/615.-1057.1920.1057/0.23.3440.1360@0.23.3440.1360" timestamp="1590188723482" />
+    <state width="1678" height="716" key="GridCell.Tab.0.bottom/615.-1057.1920.1057/0.23.3440.1360@0.23.3440.1360" timestamp="1590396668336" />
     <state width="918" height="478" key="GridCell.Tab.0.bottom/615.-1057.1920.1057/0.23.3440.1360@615.-1057.1920.1057" timestamp="1589901869310" />
     <state width="3398" height="477" key="GridCell.Tab.0.bottom/615.-1080.1920.1080/0.0.3440.1440@0.0.3440.1440" timestamp="1590188914419" />
-    <state width="3398" height="477" key="GridCell.Tab.0.center" timestamp="1590188914418">
-      <screen x="0" y="0" width="3440" height="1440" />
+    <state width="1678" height="716" key="GridCell.Tab.0.center" timestamp="1590396668335">
+      <screen x="0" y="23" width="3440" height="1360" />
     </state>
-    <state width="1678" height="477" key="GridCell.Tab.0.center/615.-1057.1920.1057/0.23.3440.1360@0.23.3440.1360" timestamp="1590188723481" />
+    <state width="1678" height="716" key="GridCell.Tab.0.center/615.-1057.1920.1057/0.23.3440.1360@0.23.3440.1360" timestamp="1590396668335" />
     <state width="918" height="478" key="GridCell.Tab.0.center/615.-1057.1920.1057/0.23.3440.1360@615.-1057.1920.1057" timestamp="1589901869310" />
     <state width="3398" height="477" key="GridCell.Tab.0.center/615.-1080.1920.1080/0.0.3440.1440@0.0.3440.1440" timestamp="1590188914418" />
-    <state width="3398" height="477" key="GridCell.Tab.0.left" timestamp="1590188914416">
-      <screen x="0" y="0" width="3440" height="1440" />
+    <state width="1678" height="716" key="GridCell.Tab.0.left" timestamp="1590396668335">
+      <screen x="0" y="23" width="3440" height="1360" />
     </state>
-    <state width="1678" height="477" key="GridCell.Tab.0.left/615.-1057.1920.1057/0.23.3440.1360@0.23.3440.1360" timestamp="1590188723480" />
+    <state width="1678" height="716" key="GridCell.Tab.0.left/615.-1057.1920.1057/0.23.3440.1360@0.23.3440.1360" timestamp="1590396668335" />
     <state width="918" height="478" key="GridCell.Tab.0.left/615.-1057.1920.1057/0.23.3440.1360@615.-1057.1920.1057" timestamp="1589901869309" />
     <state width="3398" height="477" key="GridCell.Tab.0.left/615.-1080.1920.1080/0.0.3440.1440@0.0.3440.1440" timestamp="1590188914416" />
-    <state width="3398" height="477" key="GridCell.Tab.0.right" timestamp="1590188914418">
-      <screen x="0" y="0" width="3440" height="1440" />
+    <state width="1678" height="716" key="GridCell.Tab.0.right" timestamp="1590396668335">
+      <screen x="0" y="23" width="3440" height="1360" />
     </state>
-    <state width="1678" height="477" key="GridCell.Tab.0.right/615.-1057.1920.1057/0.23.3440.1360@0.23.3440.1360" timestamp="1590188723482" />
+    <state width="1678" height="716" key="GridCell.Tab.0.right/615.-1057.1920.1057/0.23.3440.1360@0.23.3440.1360" timestamp="1590396668335" />
     <state width="918" height="478" key="GridCell.Tab.0.right/615.-1057.1920.1057/0.23.3440.1360@615.-1057.1920.1057" timestamp="1589901869310" />
     <state width="3398" height="477" key="GridCell.Tab.0.right/615.-1080.1920.1080/0.0.3440.1440@0.0.3440.1440" timestamp="1590188914418" />
     <state x="100" y="123" width="2133" height="1160" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1589527696943">
@@ -161,10 +160,10 @@
       <screen x="0" y="23" width="3440" height="1360" />
     </state>
     <state x="100" y="123" width="2385" height="1160" key="com.intellij.history.integration.ui.views.SelectionHistoryDialog/615.-1057.1920.1057/0.23.3440.1360@0.23.3440.1360" timestamp="1589915289989" />
-    <state x="566" y="460" width="588" height="538" key="find.popup" timestamp="1590187609006">
+    <state x="566" y="460" width="588" height="538" key="find.popup" timestamp="1590391152167">
       <screen x="0" y="23" width="3440" height="1360" />
     </state>
-    <state x="566" y="460" width="588" height="538" key="find.popup/615.-1057.1920.1057/0.23.3440.1360@0.23.3440.1360" timestamp="1590187609006" />
+    <state x="566" y="460" width="588" height="538" key="find.popup/615.-1057.1920.1057/0.23.3440.1360@0.23.3440.1360" timestamp="1590391152167" />
     <state x="525" y="334" width="670" height="676" key="search.everywhere.popup" timestamp="1589911880533">
       <screen x="0" y="23" width="3440" height="1360" />
     </state>
