@@ -1,6 +1,15 @@
 # Pomodoro Server
 
-This is the server for the Pomodoro App client, found here `https://github.com/meta-434/capstone-one-client`
+This is the server for the Pomodoro App client.
++ Client repo found [here](https://github.com/meta-434/capstone-one-client)
++ Live site found [here](pomodoro.alex-hapgood.info)
+
+## Concept
+The design of the Pomodoro App intends to provide the user with a fully-featured digital pomodoro timer, complete 
+with session saving and notes for reference. A signed up user, upon completion of a 25-minute pomdoro work session,
+may save the details of the session to the server. The timestamped session saves under the user's unique account credentials,
+which the user may review at a later time. Notes may be similarly saved, and the timer page displays the most recent
+note for reference during work sessions. 
 
 ## Set up
 
@@ -23,5 +32,30 @@ Run migration SQL scripts `npm run migrate`
 Run the tests `yarn run test`
 
 ## Tech
++ Node.js
 + Express
++ PostgreSQL
 + JWT
++ Mocha, Chai
++ Swaggerhub Inspector / Swaggerhub Editor (API Documentation)
+
+## API Documentation
+
+for hosted API documentation, including request / response schema, 
+please visit: https://app.swaggerhub.com/apis-docs/meta-434/pomodoro-api/1.4
+
+## Screenshots
+
+timer: 
+<br />
+![alt text]( src/images/timer.png "timer component")
+
+sessions display: 
+<br />
+![alt text]( src/images/sessions.png "sessions component")
+
+notes display: 
+<br />
+![alt text]( src/images/notes.png "notes component")
+
+
