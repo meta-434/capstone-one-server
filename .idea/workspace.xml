@@ -2,15 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d66c6df-3a9e-4e04-bae8-d7ccdedc63f6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/images/background.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/notes.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/sessions.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/timer.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../capstone-one-client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../capstone-one-client/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../capstone-one-client/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../capstone-one-client/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../capstone-one-client/src/Components/Main/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../capstone-one-client/src/Components/Main/Main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../capstone-one-client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../capstone-one-client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../capstone-one-client/src/Components/Notes/Notes.js" beforeDir="false" afterPath="$PROJECT_DIR$/../capstone-one-client/src/Components/Notes/Notes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../capstone-one-client/src/Components/Notes/Notes.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/../capstone-one-client/src/Components/Notes/Notes.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../capstone-one-client/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../capstone-one-client/yarn.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,15 +35,18 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="NewWatcherDialog.advanced.open" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="12.13.0" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="/usr/local/Cellar/yarn/1.19.2/libexec" />
-    <property name="settings.editor.selected.configurable" value="settings.nodejs" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/../capstone-one-client/node_modules/prettier" />
+    <property name="run.prettier.on.save" value="true" />
+    <property name="settings.editor.selected.configurable" value="settings.javascript.prettier" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -105,11 +106,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.dev" />
+        <item itemvalue="npm.start" />
         <item itemvalue="npm.test (1)" />
         <item itemvalue="npm.test" />
         <item itemvalue="npm.migrate:test" />
-        <item itemvalue="npm.start" />
-        <item itemvalue="npm.dev" />
       </list>
     </recent_temporary>
   </component>
@@ -128,7 +129,8 @@
       <workItem from="1589528416541" duration="11000" />
       <workItem from="1589528454336" duration="4379000" />
       <workItem from="1589707810265" duration="54723000" />
-      <workItem from="1590728615709" duration="5467000" />
+      <workItem from="1590728615709" duration="14762000" />
+      <workItem from="1590982790737" duration="457000" />
     </task>
     <servers />
   </component>
@@ -136,30 +138,38 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1678" height="275" key="GridCell.Tab.0.bottom" timestamp="1590400270059">
+    <state x="525" y="488" width="669" height="665" key="EditFileWatcherDialog" timestamp="1590983066530">
       <screen x="0" y="23" width="3440" height="1360" />
     </state>
-    <state width="1678" height="275" key="GridCell.Tab.0.bottom/615.-1057.1920.1057/0.23.3440.1360@0.23.3440.1360" timestamp="1590400270059" />
+    <state x="525" y="488" width="669" height="665" key="EditFileWatcherDialog/615.-1057.1920.1057/0.23.3440.1360@0.23.3440.1360" timestamp="1590983066530" />
+    <state width="1678" height="233" key="GridCell.Tab.0.bottom" timestamp="1590949364279">
+      <screen x="0" y="23" width="3440" height="1360" />
+    </state>
+    <state width="1678" height="233" key="GridCell.Tab.0.bottom/615.-1057.1920.1057/0.23.3440.1360@0.23.3440.1360" timestamp="1590949364279" />
     <state width="918" height="478" key="GridCell.Tab.0.bottom/615.-1057.1920.1057/0.23.3440.1360@615.-1057.1920.1057" timestamp="1589901869310" />
     <state width="3398" height="477" key="GridCell.Tab.0.bottom/615.-1080.1920.1080/0.0.3440.1440@0.0.3440.1440" timestamp="1590188914419" />
-    <state width="1678" height="275" key="GridCell.Tab.0.center" timestamp="1590400270059">
+    <state width="1678" height="233" key="GridCell.Tab.0.center" timestamp="1590949364278">
       <screen x="0" y="23" width="3440" height="1360" />
     </state>
-    <state width="1678" height="275" key="GridCell.Tab.0.center/615.-1057.1920.1057/0.23.3440.1360@0.23.3440.1360" timestamp="1590400270059" />
+    <state width="1678" height="233" key="GridCell.Tab.0.center/615.-1057.1920.1057/0.23.3440.1360@0.23.3440.1360" timestamp="1590949364278" />
     <state width="918" height="478" key="GridCell.Tab.0.center/615.-1057.1920.1057/0.23.3440.1360@615.-1057.1920.1057" timestamp="1589901869310" />
     <state width="3398" height="477" key="GridCell.Tab.0.center/615.-1080.1920.1080/0.0.3440.1440@0.0.3440.1440" timestamp="1590188914418" />
-    <state width="1678" height="275" key="GridCell.Tab.0.left" timestamp="1590400270058">
+    <state width="1678" height="233" key="GridCell.Tab.0.left" timestamp="1590949364277">
       <screen x="0" y="23" width="3440" height="1360" />
     </state>
-    <state width="1678" height="275" key="GridCell.Tab.0.left/615.-1057.1920.1057/0.23.3440.1360@0.23.3440.1360" timestamp="1590400270058" />
+    <state width="1678" height="233" key="GridCell.Tab.0.left/615.-1057.1920.1057/0.23.3440.1360@0.23.3440.1360" timestamp="1590949364277" />
     <state width="918" height="478" key="GridCell.Tab.0.left/615.-1057.1920.1057/0.23.3440.1360@615.-1057.1920.1057" timestamp="1589901869309" />
     <state width="3398" height="477" key="GridCell.Tab.0.left/615.-1080.1920.1080/0.0.3440.1440@0.0.3440.1440" timestamp="1590188914416" />
-    <state width="1678" height="275" key="GridCell.Tab.0.right" timestamp="1590400270059">
+    <state width="1678" height="233" key="GridCell.Tab.0.right" timestamp="1590949364278">
       <screen x="0" y="23" width="3440" height="1360" />
     </state>
-    <state width="1678" height="275" key="GridCell.Tab.0.right/615.-1057.1920.1057/0.23.3440.1360@0.23.3440.1360" timestamp="1590400270059" />
+    <state width="1678" height="233" key="GridCell.Tab.0.right/615.-1057.1920.1057/0.23.3440.1360@0.23.3440.1360" timestamp="1590949364278" />
     <state width="918" height="478" key="GridCell.Tab.0.right/615.-1057.1920.1057/0.23.3440.1360@615.-1057.1920.1057" timestamp="1589901869310" />
     <state width="3398" height="477" key="GridCell.Tab.0.right/615.-1080.1920.1080/0.0.3440.1440@0.0.3440.1440" timestamp="1590188914418" />
+    <state x="369" y="342" key="SettingsEditor" timestamp="1590983163360">
+      <screen x="0" y="23" width="3440" height="1360" />
+    </state>
+    <state x="369" y="342" key="SettingsEditor/615.-1057.1920.1057/0.23.3440.1360@0.23.3440.1360" timestamp="1590983163360" />
     <state x="100" y="123" width="2133" height="1160" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1589527696943">
       <screen x="0" y="23" width="3440" height="1360" />
     </state>
@@ -172,10 +182,10 @@
       <screen x="0" y="23" width="3440" height="1360" />
     </state>
     <state x="100" y="123" width="2385" height="1160" key="com.intellij.history.integration.ui.views.SelectionHistoryDialog/615.-1057.1920.1057/0.23.3440.1360@0.23.3440.1360" timestamp="1589915289989" />
-    <state x="566" y="460" width="588" height="538" key="find.popup" timestamp="1590399945269">
+    <state x="962" y="196" width="588" height="570" key="find.popup" timestamp="1590909024938">
       <screen x="0" y="23" width="3440" height="1360" />
     </state>
-    <state x="566" y="460" width="588" height="538" key="find.popup/615.-1057.1920.1057/0.23.3440.1360@0.23.3440.1360" timestamp="1590399945269" />
+    <state x="962" y="196" width="588" height="570" key="find.popup/615.-1057.1920.1057/0.23.3440.1360@0.23.3440.1360" timestamp="1590909024938" />
     <state x="525" y="334" width="670" height="676" key="search.everywhere.popup" timestamp="1589911880533">
       <screen x="0" y="23" width="3440" height="1360" />
     </state>
